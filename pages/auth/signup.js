@@ -6,7 +6,7 @@ export default () => {
   const [email, setEamil] = useState("");
   const [password, setPassword] = useState("");
   const { doRequest, errors } = useRequest({
-    url: "/api/users/signup",
+    url: "http://localhost:4000/api/users/signup",
     method: "post",
     body: { email, password },
     onSuccess: () => Router.push("/"),
